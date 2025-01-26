@@ -4,11 +4,67 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body{
+			background-color:rgb(204, 204, 204);
+			font-family: Arial, sans-serif;
+
+		}
+		ul{
+			list-style:none;
+			background-color:white;
+			border: 2px solid black;
+			border-radius:5px;
+			padding:30px;
+		}
+		ul a{
+			text-decoration:none;
+			color:black;
+		}
+		h1, h2{
+			text-align:center;
+		}
+		div{
+			background-color: rgb(255, 255, 255);
+		    padding: 10px;
+			border:2px solid black;
+		    border-radius: 10px;
+		    margin: 20px auto;
+		    display: block;
+		    width: 80%;
+		}
+		.player_one, .player_two{
+			margin:10px;
+			padding:10px;
+			width:90%;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<h1>My Playlist</h1>
+	<ul>
+		<li><a href='#' target='_blank'>Song 1</a></li>
+		<li><a href='#' target='_blank'>Song 2</a></li>
+		<li><a href='#' target='_blank'>Song 3</a></li>
+		<li><a href='#' target='_blank'>Song 4</a></li>
+		<li><a href='#' target='_blank'>Song 5</a></li>
+	</ul>
+	<h2>Now Playing...</h2>
+	<div>
+		<video class="player_one" controls>
+		    <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	    <h2>Mp3 Song</h2>
+		<p>Maan Meri Jaan</p>
+		<audio class="player_two" controls>
+			<source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
